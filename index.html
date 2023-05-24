@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Форма з перевіркою</title>
+    <style>
+        body {
+            justify-content: center;
+            align-items: center;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        table td {
+            padding: 7px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <h1>Форма з перевіркою</h1>
+
+    <form id="registerForm">
+        <table>
+            <tr>
+                <td><label for="login">Логін:</label></td>
+                <td><input type="text" id="login" name="login"></td>
+            </tr>
+            <tr>
+                <td><label for="password">Пароль:</label></td>
+                <td><input type="password" id="password" name="password"></td>
+            </tr>
+            <tr>
+                <td><label for="confirmPassword">Підтвердження паролю:</label></td>
+                <td><input type="password" id="confirmPassword" name="confirmPassword"></td>
+            </tr>
+        </table>
+
+        <input type="submit" value="Register">
+    </form>
+
+    <div id="error"></div>
+    <div id="success"></div>
+</body>
+</html>
